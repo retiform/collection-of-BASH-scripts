@@ -1,1 +1,6 @@
 while read -r p _; do lpadmin -m raw -d "$p"; done < <(lpstat -a)
+:'
+this makes all printers RAW, so that the clients will have to use their own driver for the printer.
+Useful for connecting windows computers to CUPS print servers; be warned, deploying this on a large scale (10+ computers) is 
+a bad idea.
+'
