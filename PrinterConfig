@@ -1,0 +1,1 @@
+while read -r p _; do lpadmin -m raw -d "$p"; done < <(lpstat -a)
