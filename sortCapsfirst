@@ -1,3 +1,4 @@
 (head -n 1 meh && tail -n +2 meh | LC_ALL=C sort -u) > meh.sorted && mv meh.sorted meh
 
 #replace meh with file to be sorted
+#(This is kinda stolen from Hack Club's Markcop, I just added the bit about the locals).
